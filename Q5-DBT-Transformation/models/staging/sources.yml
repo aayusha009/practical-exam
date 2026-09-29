@@ -1,0 +1,9 @@
+version: 2
+sources:
+  - name: ecommerce
+    tables:
+      - name: orders
+      - name: order_items
+      - name: customers
+      - name: products
+
