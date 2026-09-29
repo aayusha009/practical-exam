@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: int_orders
+    description: "Orders enriched with the customer's country via a left join to stg_customers. Grain: one row per order, same as stg_orders."
+    columns:
+      - name: order_id
+        description: "Primary key, carried through from stg_orders."
+        tests: [unique, not_null]
+      - name: customer_id
+        tests: [not_null]
+      - name: order_date
+        tests: [not_null]
+      - name: country
+        description: "Country of the customer who placed the order, joined in from stg_customers. Null if customer_id has no matching row there."
+      - name: total_amount
+        description: "Total value of the order, carried through unchanged from stg_orders."

@@ -1,0 +1,379 @@
+[0m13:36:06.215513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db72a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f2171f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f216da0>]}
+
+
+============================== 13:36:06.231820 | 5a05c165-580e-48d7-b49c-6efe01607df9 ==============================
+[0m13:36:06.231820 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:36:06.236134 [debug] [MainThread]: running dbt with arguments {'log_path': 'logs', 'quiet': 'False', 'use_experimental_parser': 'False', 'maximum_seed_size_mib': '1', 'warn_error': 'None', 'profiles_dir': '/Users/dhbinu/.dbt', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'empty': 'False', 'target_path': 'None', 'partial_parse': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'printer_width': '80', 'no_print': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'version_check': 'True', 'debug': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'use_colors': 'True'}
+[0m13:36:06.237760 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:36:06.337259 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.5405324, "process_in_blocks": "0", "process_kernel_time": 0.534601, "process_mem_max_rss": "99397632", "process_out_blocks": "0", "process_user_time": 3.25672}
+[0m13:36:06.338681 [debug] [MainThread]: Command `dbt run` failed at 13:36:06.338428 after 0.54 seconds
+[0m13:36:06.339583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db72a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f217e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f2174c0>]}
+[0m13:36:06.342162 [debug] [MainThread]: Flushing usage events
+[0m13:36:07.722434 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:36:27.460355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c4ea10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10934b1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10934ada0>]}
+
+
+============================== 13:36:27.468244 | 5c4630e7-2846-4bec-a684-e19c09bd49f7 ==============================
+[0m13:36:27.468244 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:36:27.469646 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'empty': 'None', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'hints_enabled': 'True', 'log_cache_events': 'False', 'printer_width': '80', 'maximum_seed_size_mib': '1', 'fail_fast': 'False', 'quiet': 'False', 'debug': 'False', 'write_json': 'True', 'no_print': 'None', 'profiles_dir': '/Users/dhbinu/.dbt', 'invocation_command': 'dbt test --select stg_orders', 'use_experimental_parser': 'False', 'target_path': 'None', 'log_path': 'logs', 'indirect_selection': 'eager', 'log_format': 'default', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'use_colors': 'True', 'introspect': 'True', 'static_parser': 'True'}
+[0m13:36:27.471146 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:36:27.475307 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.23524076, "process_in_blocks": "0", "process_kernel_time": 0.271403, "process_mem_max_rss": "99188736", "process_out_blocks": "0", "process_user_time": 2.830054}
+[0m13:36:27.477649 [debug] [MainThread]: Command `dbt test` failed at 13:36:27.477249 after 0.24 seconds
+[0m13:36:27.478922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c4ea10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10934bfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10934b4c0>]}
+[0m13:36:27.479734 [debug] [MainThread]: Flushing usage events
+[0m13:36:28.586135 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:42:22.639711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c35eaa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d9b3580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d9b39d0>]}
+
+
+============================== 13:42:22.650071 | 1b278c07-0b1d-4fcc-8dd1-275961a9efad ==============================
+[0m13:42:22.650071 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:42:22.651582 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/dhbinu/.dbt', 'target_path': 'None', 'quiet': 'False', 'partial_parse': 'True', 'debug': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'printer_width': '80', 'write_json': 'True', 'log_format': 'default', 'log_path': '/Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/logs', 'use_colors': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'warn_error': 'None', 'version_check': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'empty': 'None', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'hints_enabled': 'True'}
+[0m13:42:22.710194 [info ] [MainThread]: dbt version: 1.12.5
+[0m13:42:22.711215 [info ] [MainThread]: python version: 3.10.5
+[0m13:42:22.712281 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+[0m13:42:22.713964 [info ] [MainThread]: os info: macOS-14.8.9-x86_64-i386-64bit
+[0m13:42:22.726502 [info ] [MainThread]: Using profiles dir at /Users/dhbinu/.dbt
+[0m13:42:22.727689 [info ] [MainThread]: Using profiles.yml file at /Users/dhbinu/.dbt/profiles.yml
+[0m13:42:22.731815 [info ] [MainThread]: Using dbt_project.yml file at /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/dbt_project.yml
+[0m13:42:22.955842 [info ] [MainThread]: Configuration:
+[0m13:42:22.956627 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m13:42:22.957220 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m13:42:22.957798 [info ] [MainThread]: Required dependencies:
+[0m13:42:22.958490 [debug] [MainThread]: Executing "git --help"
+[0m13:42:23.026866 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:42:23.028613 [debug] [MainThread]: STDERR: "b''"
+[0m13:42:23.029821 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:42:23.031240 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m13:42:23.032605 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m13:42:23.033533 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'practical-exam'
+
+
+[0m13:42:23.034408 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  at path ['name']: 'practical-exam' does not match '^[^\\d\\W]\\w*$'
+
+Error encountered in /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/dbt_project.yml
+
+
+[0m13:42:23.041608 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.6461975, "process_in_blocks": "0", "process_kernel_time": 0.517967, "process_mem_max_rss": "101122048", "process_out_blocks": "0", "process_user_time": 3.490938}
+[0m13:42:23.043080 [debug] [MainThread]: Command `dbt debug` failed at 13:42:23.042803 after 0.65 seconds
+[0m13:42:23.044268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c35eaa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7340a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d9661a0>]}
+[0m13:42:23.045852 [debug] [MainThread]: Flushing usage events
+[0m13:42:24.267341 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:46:15.572145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a3ea10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060e7550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1060e79a0>]}
+
+
+============================== 13:46:15.584988 | a8a72e27-8587-4e88-93da-f296fc46749b ==============================
+[0m13:46:15.584988 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:46:15.586667 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'debug': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'printer_width': '80', 'quiet': 'False', 'log_path': '/Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/logs', 'introspect': 'True', 'write_json': 'True', 'static_parser': 'True', 'warn_error': 'None', 'hints_enabled': 'True', 'profiles_dir': '/Users/dhbinu/.dbt', 'partial_parse': 'True', 'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'log_cache_events': 'False'}
+[0m13:46:15.637137 [info ] [MainThread]: dbt version: 1.12.5
+[0m13:46:15.638075 [info ] [MainThread]: python version: 3.10.5
+[0m13:46:15.639022 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+[0m13:46:15.640077 [info ] [MainThread]: os info: macOS-14.8.9-x86_64-i386-64bit
+[0m13:46:15.849382 [info ] [MainThread]: Using profiles dir at /Users/dhbinu/.dbt
+[0m13:46:15.850387 [info ] [MainThread]: Using profiles.yml file at /Users/dhbinu/.dbt/profiles.yml
+[0m13:46:15.851161 [info ] [MainThread]: Using dbt_project.yml file at /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/dbt_project.yml
+[0m13:46:15.853221 [info ] [MainThread]: adapter type: postgres
+[0m13:46:15.854314 [info ] [MainThread]: adapter version: 1.11.0
+[0m13:46:16.212874 [info ] [MainThread]: Configuration:
+[0m13:46:16.213873 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:46:16.214559 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:46:16.215217 [info ] [MainThread]: Required dependencies:
+[0m13:46:16.216078 [debug] [MainThread]: Executing "git --help"
+[0m13:46:16.291605 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:46:16.293804 [debug] [MainThread]: STDERR: "b''"
+[0m13:46:16.294850 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:46:16.295957 [info ] [MainThread]: Connection:
+[0m13:46:16.297542 [info ] [MainThread]:   host: localhost
+[0m13:46:16.298505 [info ] [MainThread]:   port: 5432
+[0m13:46:16.299252 [info ] [MainThread]:   user: postgres
+[0m13:46:16.300366 [info ] [MainThread]:   database: exam
+[0m13:46:16.305368 [info ] [MainThread]:   schema: public
+[0m13:46:16.307282 [info ] [MainThread]:   connect_timeout: 10
+[0m13:46:16.310283 [info ] [MainThread]:   role: None
+[0m13:46:16.317840 [info ] [MainThread]:   search_path: None
+[0m13:46:16.319222 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:46:16.319999 [info ] [MainThread]:   sslmode: None
+[0m13:46:16.320704 [info ] [MainThread]:   sslcert: None
+[0m13:46:16.321391 [info ] [MainThread]:   sslkey: None
+[0m13:46:16.329465 [info ] [MainThread]:   sslrootcert: None
+[0m13:46:16.332047 [info ] [MainThread]:   application_name: dbt
+[0m13:46:16.338093 [info ] [MainThread]:   autocommit: False
+[0m13:46:16.339333 [info ] [MainThread]:   retries: 1
+[0m13:46:16.346289 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m13:46:16.634781 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:46:16.790504 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:46:16.791376 [debug] [MainThread]: On debug: select 1 as id
+[0m13:46:16.791926 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:46:17.022663 [debug] [MainThread]: SQL status: SELECT 1 in 0.231 seconds
+[0m13:46:17.024657 [debug] [MainThread]: On debug: Close
+[0m13:46:17.025594 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:46:17.026736 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:46:17.032065 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.6981195, "process_in_blocks": "0", "process_kernel_time": 0.923074, "process_mem_max_rss": "115331072", "process_out_blocks": "0", "process_user_time": 4.367}
+[0m13:46:17.035360 [debug] [MainThread]: Command `dbt debug` succeeded at 13:46:17.034920 after 1.70 seconds
+[0m13:46:17.036556 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:46:17.039351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a3ea10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104dbff40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10621e770>]}
+[0m13:46:17.041007 [debug] [MainThread]: Flushing usage events
+[0m13:46:18.293056 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:46:23.586961 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094faa40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abf71c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abf6d70>]}
+
+
+============================== 13:46:23.594869 | 9fca63a5-d0a4-4f3c-bf76-6da79612dea2 ==============================
+[0m13:46:23.594869 [info ] [MainThread]: Running with dbt=1.12.5
+[0m13:46:23.596080 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/logs', 'empty': 'False', 'target_path': 'None', 'version_check': 'True', 'introspect': 'True', 'invocation_command': 'dbt build', 'write_json': 'True', 'maximum_seed_size_mib': '1', 'profiles_dir': '/Users/dhbinu/.dbt', 'log_cache_events': 'False', 'printer_width': '80', 'debug': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_format': 'default', 'static_parser': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'warn_error': 'None'}
+[0m13:46:24.425178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9fca63a5-d0a4-4f3c-bf76-6da79612dea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e505e0>]}
+[0m13:46:24.589522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9fca63a5-d0a4-4f3c-bf76-6da79612dea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac275e0>]}
+[0m13:46:24.591218 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m13:46:24.841361 [debug] [MainThread]: checksum: fa0e3313d7e80a7c390dff9a981c0bd05689b386e79da64cdec770a99105aedf, vars: {}, profile: my_dbt_project, target: dev, version: 1.12.5
+[0m13:46:24.842964 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:46:24.843810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9fca63a5-d0a4-4f3c-bf76-6da79612dea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b370040>]}
+[0m13:46:27.351768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9fca63a5-d0a4-4f3c-bf76-6da79612dea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c0c5720>]}
+[0m13:46:27.654519 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/manifest.json
+[0m13:46:27.660695 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/semantic_manifest.json
+[0m13:46:27.707713 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/osi_document.json
+[0m13:46:27.763174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9fca63a5-d0a4-4f3c-bf76-6da79612dea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10be84310>]}
+[0m13:46:27.764398 [info ] [MainThread]: Found 4 models, 4 sources, 477 macros
+[0m13:46:27.768018 [info ] [MainThread]: 
+[0m13:46:27.768848 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:46:27.769507 [info ] [MainThread]: 
+[0m13:46:27.772084 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m13:46:27.807161 [debug] [ThreadPool]: Acquiring new postgres connection 'list_exam'
+[0m13:46:27.900498 [debug] [ThreadPool]: Using postgres connection "list_exam"
+[0m13:46:27.901658 [debug] [ThreadPool]: On list_exam: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_exam"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m13:46:27.903858 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:46:28.019661 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.116 seconds
+[0m13:46:28.024947 [debug] [ThreadPool]: On list_exam: Close
+[0m13:46:28.028325 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_exam, now list_exam_public)
+[0m13:46:28.039947 [debug] [ThreadPool]: Using postgres connection "list_exam_public"
+[0m13:46:28.041496 [debug] [ThreadPool]: On list_exam_public: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_exam_public"} */
+select
+      'exam' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'exam' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'exam' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+    union all
+    select distinct
+     'exam' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'public'
+  
+[0m13:46:28.042344 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:46:28.268202 [debug] [ThreadPool]: SQL status: SELECT 14 in 0.226 seconds
+[0m13:46:28.273049 [debug] [ThreadPool]: On list_exam_public: ROLLBACK
+[0m13:46:28.274533 [debug] [ThreadPool]: On list_exam_public: Close
+[0m13:46:28.290656 [debug] [MainThread]: Using postgres connection "master"
+[0m13:46:28.291753 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m13:46:28.292620 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:46:28.421551 [debug] [MainThread]: SQL status: SELECT 6 in 0.129 seconds
+[0m13:46:28.428162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9fca63a5-d0a4-4f3c-bf76-6da79612dea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a843ee0>]}
+[0m13:46:28.429344 [debug] [MainThread]: On master: ROLLBACK
+[0m13:46:28.430479 [debug] [MainThread]: On master: COMMIT
+[0m13:46:28.431273 [debug] [MainThread]: Using postgres connection "master"
+[0m13:46:28.431977 [debug] [MainThread]: On master: COMMIT
+[0m13:46:28.432956 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m13:46:28.433872 [debug] [MainThread]: On master: Close
+[0m13:46:28.439829 [debug] [Thread-1 (]: Began running node model.practical_exam.stg_customers
+[0m13:46:28.441083 [info ] [Thread-1 (]: 1 of 4 START sql view model public.stg_customers ............................... [RUN]
+[0m13:46:28.443093 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_exam_public, now model.practical_exam.stg_customers)
+[0m13:46:28.444283 [debug] [Thread-1 (]: Began compiling node model.practical_exam.stg_customers
+[0m13:46:28.466201 [debug] [Thread-1 (]: Writing injected SQL for node "model.practical_exam.stg_customers"
+[0m13:46:28.474003 [debug] [Thread-1 (]: Began executing node model.practical_exam.stg_customers
+[0m13:46:28.588439 [debug] [Thread-1 (]: Writing runtime sql for node "model.practical_exam.stg_customers"
+[0m13:46:28.594261 [debug] [Thread-1 (]: Using postgres connection "model.practical_exam.stg_customers"
+[0m13:46:28.595188 [debug] [Thread-1 (]: On model.practical_exam.stg_customers: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.practical_exam.stg_customers"} */
+
+  create view "exam"."public"."stg_customers__dbt_tmp"
+    
+    
+  as (
+    select
+    customer_id,
+    first_name,
+    last_name,
+    email,
+    country
+from "exam"."ecommerce"."customers"
+  );
+[0m13:46:28.595957 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:46:28.676393 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "ecommerce.customers" does not exist
+LINE 13: from "exam"."ecommerce"."customers"
+              ^
+
+[0m13:46:28.677498 [debug] [Thread-1 (]: On model.practical_exam.stg_customers: ROLLBACK
+[0m13:46:28.678857 [debug] [Thread-1 (]: On model.practical_exam.stg_customers: Close
+[0m13:46:28.702521 [debug] [Thread-1 (]: Database Error in model stg_customers (models/staging/stg_customers.sql)
+  relation "ecommerce.customers" does not exist
+  LINE 13: from "exam"."ecommerce"."customers"
+                ^
+  compiled code at target/run/practical_exam/models/staging/stg_customers.sql
+[0m13:46:28.706982 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9fca63a5-d0a4-4f3c-bf76-6da79612dea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3c1420>]}
+[0m13:46:28.708500 [error] [Thread-1 (]: 1 of 4 ERROR creating sql view model public.stg_customers ...................... [[31mERROR[0m in 0.26s]
+[0m13:46:28.710009 [debug] [Thread-1 (]: Finished running node model.practical_exam.stg_customers
+[0m13:46:28.710970 [debug] [Thread-1 (]: Began running node model.practical_exam.stg_orders
+[0m13:46:28.713287 [debug] [Thread-4 (]: Marking all children of 'model.practical_exam.stg_customers' to be skipped because of status 'error'.  Reason: Database Error in model stg_customers (models/staging/stg_customers.sql)
+  relation "ecommerce.customers" does not exist
+  LINE 13: from "exam"."ecommerce"."customers"
+                ^
+  compiled code at target/run/practical_exam/models/staging/stg_customers.sql.
+[0m13:46:28.712234 [info ] [Thread-1 (]: 2 of 4 START sql view model public.stg_orders .................................. [RUN]
+[0m13:46:28.716189 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.practical_exam.stg_customers, now model.practical_exam.stg_orders)
+[0m13:46:28.717814 [debug] [Thread-1 (]: Began compiling node model.practical_exam.stg_orders
+[0m13:46:28.722201 [debug] [Thread-1 (]: Writing injected SQL for node "model.practical_exam.stg_orders"
+[0m13:46:28.727064 [debug] [Thread-1 (]: Began executing node model.practical_exam.stg_orders
+[0m13:46:28.736601 [debug] [Thread-1 (]: Writing runtime sql for node "model.practical_exam.stg_orders"
+[0m13:46:28.743150 [debug] [Thread-1 (]: Using postgres connection "model.practical_exam.stg_orders"
+[0m13:46:28.744592 [debug] [Thread-1 (]: On model.practical_exam.stg_orders: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.practical_exam.stg_orders"} */
+
+  create view "exam"."public"."stg_orders__dbt_tmp"
+    
+    
+  as (
+    select
+    order_id,
+    customer_id,
+    order_date,
+    order_status,
+    total_amount
+from "exam"."ecommerce"."orders"
+  );
+[0m13:46:28.745610 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:46:28.786295 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "ecommerce.orders" does not exist
+LINE 13: from "exam"."ecommerce"."orders"
+              ^
+
+[0m13:46:28.787223 [debug] [Thread-1 (]: On model.practical_exam.stg_orders: ROLLBACK
+[0m13:46:28.788324 [debug] [Thread-1 (]: On model.practical_exam.stg_orders: Close
+[0m13:46:28.790200 [debug] [Thread-1 (]: Database Error in model stg_orders (models/staging/stg_orders.sql)
+  relation "ecommerce.orders" does not exist
+  LINE 13: from "exam"."ecommerce"."orders"
+                ^
+  compiled code at target/run/practical_exam/models/staging/stg_orders.sql
+[0m13:46:28.791274 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9fca63a5-d0a4-4f3c-bf76-6da79612dea2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093b45e0>]}
+[0m13:46:28.792507 [error] [Thread-1 (]: 2 of 4 ERROR creating sql view model public.stg_orders ......................... [[31mERROR[0m in 0.08s]
+[0m13:46:28.793701 [debug] [Thread-1 (]: Finished running node model.practical_exam.stg_orders
+[0m13:46:28.794718 [debug] [Thread-4 (]: Marking all children of 'model.practical_exam.stg_orders' to be skipped because of status 'error'.  Reason: Database Error in model stg_orders (models/staging/stg_orders.sql)
+  relation "ecommerce.orders" does not exist
+  LINE 13: from "exam"."ecommerce"."orders"
+                ^
+  compiled code at target/run/practical_exam/models/staging/stg_orders.sql.
+[0m13:46:28.795948 [debug] [Thread-1 (]: Began running node model.practical_exam.int_orders
+[0m13:46:28.797229 [info ] [Thread-1 (]: 3 of 4 SKIP relation public.int_orders ......................................... [[33mSKIP[0m]
+[0m13:46:28.798493 [debug] [Thread-1 (]: Finished running node model.practical_exam.int_orders
+[0m13:46:28.807801 [debug] [Thread-4 (]: Marking all children of 'model.practical_exam.int_orders' to be skipped because of status 'skipped'. 
+[0m13:46:28.809238 [debug] [Thread-1 (]: Began running node model.practical_exam.fct_orders
+[0m13:46:28.810112 [info ] [Thread-1 (]: 4 of 4 SKIP relation public.fct_orders ......................................... [[33mSKIP[0m]
+[0m13:46:28.811123 [debug] [Thread-1 (]: Finished running node model.practical_exam.fct_orders
+[0m13:46:28.811919 [debug] [Thread-4 (]: Marking all children of 'model.practical_exam.fct_orders' to be skipped because of status 'skipped'. 
+[0m13:46:28.814410 [debug] [MainThread]: On master: COMMIT
+[0m13:46:28.815374 [debug] [MainThread]: Using postgres connection "master"
+[0m13:46:28.816163 [debug] [MainThread]: On master: COMMIT
+[0m13:46:28.819645 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:46:28.874269 [debug] [MainThread]: SQL status: COMMIT in 0.055 seconds
+[0m13:46:28.875318 [debug] [MainThread]: On master: Close
+[0m13:46:28.876521 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:46:28.877397 [debug] [MainThread]: Connection 'model.practical_exam.stg_orders' was properly closed.
+[0m13:46:28.878398 [info ] [MainThread]: 
+[0m13:46:28.879507 [info ] [MainThread]: Finished running 1 incremental model, 3 view models in 0 hours 0 minutes and 1.11 seconds (1.11s).
+[0m13:46:28.881617 [debug] [MainThread]: Command end result
+[0m13:46:28.966781 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/manifest.json
+[0m13:46:28.971818 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/semantic_manifest.json
+[0m13:46:28.982258 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/osi_document.json
+[0m13:46:29.008244 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/run_results.json
+[0m13:46:29.010919 [info ] [MainThread]: 
+[0m13:46:29.011838 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m13:46:29.012545 [info ] [MainThread]: 
+[0m13:46:29.013338 [error] [MainThread]: [[31mERROR[0m]: in model stg_customers (models/staging/stg_customers.sql)
+[0m13:46:29.014117 [error] [MainThread]:   Database Error in model stg_customers (models/staging/stg_customers.sql)
+  relation "ecommerce.customers" does not exist
+  LINE 13: from "exam"."ecommerce"."customers"
+                ^
+  compiled code at target/run/practical_exam/models/staging/stg_customers.sql
+[0m13:46:29.014767 [info ] [MainThread]: 
+[0m13:46:29.015508 [info ] [MainThread]:   compiled code at target/compiled/practical_exam/models/staging/stg_customers.sql
+[0m13:46:29.028517 [info ] [MainThread]: 
+[0m13:46:29.030822 [error] [MainThread]: [[31mERROR[0m]: in model stg_orders (models/staging/stg_orders.sql)
+[0m13:46:29.040568 [error] [MainThread]:   Database Error in model stg_orders (models/staging/stg_orders.sql)
+  relation "ecommerce.orders" does not exist
+  LINE 13: from "exam"."ecommerce"."orders"
+                ^
+  compiled code at target/run/practical_exam/models/staging/stg_orders.sql
+[0m13:46:29.081364 [info ] [MainThread]: 
+[0m13:46:29.094221 [info ] [MainThread]:   compiled code at target/compiled/practical_exam/models/staging/stg_orders.sql
+[0m13:46:29.098303 [info ] [MainThread]: 
+[0m13:46:29.181882 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=2 SKIP=2 NO-OP=0 REUSED=0 TOTAL=4
+[0m13:46:29.189206 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 5.854412, "process_in_blocks": "0", "process_kernel_time": 0.777304, "process_mem_max_rss": "134033408", "process_out_blocks": "0", "process_user_time": 7.231999}
+[0m13:46:29.191191 [debug] [MainThread]: Command `dbt build` failed at 13:46:29.190806 after 5.86 seconds
+[0m13:46:29.192757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094faa40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd95660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bf468f0>]}
+[0m13:46:29.194460 [debug] [MainThread]: Flushing usage events
+[0m13:46:30.449022 [debug] [MainThread]: An error was encountered while trying to flush usage events

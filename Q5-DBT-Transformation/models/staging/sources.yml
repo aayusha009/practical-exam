@@ -1,9 +1,14 @@
 version: 2
+
 sources:
   - name: ecommerce
+    description: "Raw operational tables landed from the source application, loaded as-is with no transformation applied."
     tables:
       - name: orders
+        description: "One row per order placed by a customer. Grain: one order."
       - name: order_items
+        description: "One row per line item within an order (one product on one order)."
       - name: customers
+        description: "One row per customer, including contact info and country."
       - name: products
-
+        description: "Product catalog. One row per product, including price and category."

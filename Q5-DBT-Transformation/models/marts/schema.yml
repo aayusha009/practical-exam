@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Fact table of orders, incrementally loaded. Grain: one row per order. This is the model analysts should query for order-level reporting."
+    columns:
+      - name: order_id
+        description: "Primary key of the orders fact table."
+        tests: [unique, not_null]
+      - name: customer_id
+        description: "Foreign key to stg_customers.customer_id."
+        tests:
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: order_date
+        description: "Date the order was placed; also the incremental filter column for this model's incremental loads."
+        tests: [not_null]
+      - name: country
+        description: "Country of the customer who placed the order."
+      - name: total_amount
+        description: "Total value of the order. Fully additive — safe to sum across any dimension (customer, date, country)."

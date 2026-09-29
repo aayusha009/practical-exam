@@ -1,0 +1,19 @@
+name: 'practical_exam'
+version: '1.0.0'
+config-version: 2
+profile: 'my_dbt_project'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets:
+    - "target"
+    - "dbt_packages"
+
+models:
+  practical_exam:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

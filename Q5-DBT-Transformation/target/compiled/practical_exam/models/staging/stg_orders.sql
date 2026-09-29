@@ -4,4 +4,4 @@ select
     order_date,
     order_status,
     total_amount
-from {{ source('ecommerce', 'orders') }}
+from "exam"."ecommerce"."orders"
