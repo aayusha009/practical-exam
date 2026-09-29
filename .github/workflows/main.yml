@@ -1,0 +1,21 @@
+name: Docker CI
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build docker image
+        uses: docker build -t pipeline ./Q9-Docker
+
+      - name: Start containers
+        uses: docker compose -f Q9-Docker/docker-compose.yml up -d
+
+      - name: Check containers are running
+        uses: docker ps
+
+      
+      
