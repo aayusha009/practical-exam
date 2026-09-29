@@ -377,3 +377,676 @@ LINE 13: from "exam"."ecommerce"."orders"
 [0m13:46:29.192757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1094faa40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd95660>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bf468f0>]}
 [0m13:46:29.194460 [debug] [MainThread]: Flushing usage events
 [0m13:46:30.449022 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:38:10.343571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b872a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf6b1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf6ad70>]}
+
+
+============================== 15:38:10.374161 | 83f84bf1-9cfb-4ac2-889f-33488e7fc63d ==============================
+[0m15:38:10.374161 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:38:10.377357 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'maximum_seed_size_mib': '1', 'use_experimental_parser': 'False', 'hints_enabled': 'True', 'version_check': 'True', 'fail_fast': 'False', 'write_json': 'True', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'profiles_dir': '/Users/dhbinu/.dbt', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'invocation_command': 'dbt docs generate', 'printer_width': '80', 'log_path': '/Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/logs', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'target_path': 'None', 'partial_parse': 'True', 'use_colors': 'True'}
+[0m15:38:12.829162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '83f84bf1-9cfb-4ac2-889f-33488e7fc63d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a14ded0>]}
+[0m15:38:13.653018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '83f84bf1-9cfb-4ac2-889f-33488e7fc63d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ceb4130>]}
+[0m15:38:13.662671 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m15:38:14.597305 [debug] [MainThread]: checksum: fa0e3313d7e80a7c390dff9a981c0bd05689b386e79da64cdec770a99105aedf, vars: {}, profile: my_dbt_project, target: dev, version: 1.12.5
+[0m15:38:15.498900 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 1 files changed.
+[0m15:38:15.501353 [debug] [MainThread]: Partial parsing: added file: practical_exam://models/staging/schema.yml
+[0m15:38:15.502882 [debug] [MainThread]: Partial parsing: added file: practical_exam://models/marts/schema.yml
+[0m15:38:15.504143 [debug] [MainThread]: Partial parsing: added file: practical_exam://models/intermediate/schema.yml
+[0m15:38:15.506932 [debug] [MainThread]: Partial parsing: updated file: practical_exam://models/staging/sources.yml
+[0m15:38:18.997670 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'stg_orders' in
+package 'practical_exam' (models/staging/schema.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+[0m15:38:18.999151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '83f84bf1-9cfb-4ac2-889f-33488e7fc63d', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6cb3d0>]}
+[0m15:38:20.694904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '83f84bf1-9cfb-4ac2-889f-33488e7fc63d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4716c0>]}
+[0m15:38:20.769691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '83f84bf1-9cfb-4ac2-889f-33488e7fc63d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb15360>]}
+[0m15:38:20.771205 [info ] [MainThread]: Found 4 models, 16 data tests, 4 sources, 477 macros
+[0m15:38:20.773170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '83f84bf1-9cfb-4ac2-889f-33488e7fc63d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb4ccd0>]}
+[0m15:38:20.793489 [info ] [MainThread]: 
+[0m15:38:20.798114 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:38:20.799754 [info ] [MainThread]: 
+[0m15:38:20.806071 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:38:20.867304 [debug] [ThreadPool]: Acquiring new postgres connection 'list_exam_public'
+[0m15:38:21.105673 [debug] [ThreadPool]: Using postgres connection "list_exam_public"
+[0m15:38:21.106991 [debug] [ThreadPool]: On list_exam_public: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_exam_public"} */
+select
+      'exam' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'exam' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'exam' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+    union all
+    select distinct
+     'exam' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'public'
+  
+[0m15:38:21.108780 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:38:21.511934 [debug] [ThreadPool]: SQL status: SELECT 14 in 0.403 seconds
+[0m15:38:21.517703 [debug] [ThreadPool]: On list_exam_public: ROLLBACK
+[0m15:38:21.537405 [debug] [ThreadPool]: On list_exam_public: Close
+[0m15:38:21.555950 [debug] [MainThread]: Using postgres connection "master"
+[0m15:38:21.556883 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m15:38:21.557848 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:38:21.658432 [debug] [MainThread]: SQL status: SELECT 6 in 0.101 seconds
+[0m15:38:21.666357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '83f84bf1-9cfb-4ac2-889f-33488e7fc63d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e591030>]}
+[0m15:38:21.668209 [debug] [MainThread]: On master: ROLLBACK
+[0m15:38:21.687295 [debug] [MainThread]: On master: Close
+[0m15:38:21.695026 [debug] [Thread-1 (]: Began running node model.practical_exam.stg_customers
+[0m15:38:21.697495 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_exam_public, now model.practical_exam.stg_customers)
+[0m15:38:21.701861 [debug] [Thread-1 (]: Began compiling node model.practical_exam.stg_customers
+[0m15:38:21.731243 [debug] [Thread-1 (]: Writing injected SQL for node "model.practical_exam.stg_customers"
+[0m15:38:21.735779 [debug] [Thread-1 (]: Began executing node model.practical_exam.stg_customers
+[0m15:38:21.739046 [debug] [Thread-1 (]: Finished running node model.practical_exam.stg_customers
+[0m15:38:21.740950 [debug] [Thread-1 (]: Began running node model.practical_exam.stg_orders
+[0m15:38:21.743303 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.practical_exam.stg_customers, now model.practical_exam.stg_orders)
+[0m15:38:21.744915 [debug] [Thread-1 (]: Began compiling node model.practical_exam.stg_orders
+[0m15:38:21.754246 [debug] [Thread-1 (]: Writing injected SQL for node "model.practical_exam.stg_orders"
+[0m15:38:21.757942 [debug] [Thread-1 (]: Began executing node model.practical_exam.stg_orders
+[0m15:38:21.760855 [debug] [Thread-1 (]: Finished running node model.practical_exam.stg_orders
+[0m15:38:21.762311 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:38:21.764289 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.practical_exam.stg_orders, now test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m15:38:21.766448 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:38:21.804966 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m15:38:21.807429 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:38:21.811608 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:38:21.813345 [debug] [Thread-1 (]: Began running node test.practical_exam.unique_stg_customers_customer_id.c7614daada
+[0m15:38:21.815266 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.practical_exam.unique_stg_customers_customer_id.c7614daada)
+[0m15:38:21.816985 [debug] [Thread-1 (]: Began compiling node test.practical_exam.unique_stg_customers_customer_id.c7614daada
+[0m15:38:21.852360 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.unique_stg_customers_customer_id.c7614daada"
+[0m15:38:21.855041 [debug] [Thread-1 (]: Began executing node test.practical_exam.unique_stg_customers_customer_id.c7614daada
+[0m15:38:21.859401 [debug] [Thread-1 (]: Finished running node test.practical_exam.unique_stg_customers_customer_id.c7614daada
+[0m15:38:21.861084 [debug] [Thread-1 (]: Began running node model.practical_exam.int_orders
+[0m15:38:21.862868 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.unique_stg_customers_customer_id.c7614daada, now model.practical_exam.int_orders)
+[0m15:38:21.864524 [debug] [Thread-1 (]: Began compiling node model.practical_exam.int_orders
+[0m15:38:21.871838 [debug] [Thread-1 (]: Writing injected SQL for node "model.practical_exam.int_orders"
+[0m15:38:21.875343 [debug] [Thread-1 (]: Began executing node model.practical_exam.int_orders
+[0m15:38:21.878590 [debug] [Thread-1 (]: Finished running node model.practical_exam.int_orders
+[0m15:38:21.880594 [debug] [Thread-1 (]: Began running node test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0
+[0m15:38:21.882975 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.practical_exam.int_orders, now test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0)
+[0m15:38:21.884695 [debug] [Thread-1 (]: Began compiling node test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0
+[0m15:38:21.931723 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0"
+[0m15:38:21.940632 [debug] [Thread-1 (]: Began executing node test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0
+[0m15:38:21.948591 [debug] [Thread-1 (]: Finished running node test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0
+[0m15:38:21.963223 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:38:21.965213 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0, now test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5)
+[0m15:38:21.966786 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:38:21.995826 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m15:38:21.998150 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:38:22.005546 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:38:22.007000 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:38:22.011022 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5, now test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb)
+[0m15:38:22.012523 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:38:22.056378 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb"
+[0m15:38:22.059740 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:38:22.062949 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:38:22.064595 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:38:22.066474 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb, now test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64)
+[0m15:38:22.068085 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:38:22.095844 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64"
+[0m15:38:22.098638 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:38:22.111619 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:38:22.113397 [debug] [Thread-1 (]: Began running node test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m15:38:22.115434 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64, now test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500)
+[0m15:38:22.117100 [debug] [Thread-1 (]: Began compiling node test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m15:38:22.184868 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+[0m15:38:22.204820 [debug] [Thread-1 (]: Began executing node test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m15:38:22.210179 [debug] [Thread-1 (]: Finished running node test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m15:38:22.214944 [debug] [Thread-1 (]: Began running node test.practical_exam.unique_stg_orders_order_id.e3b841c71a
+[0m15:38:22.217904 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500, now test.practical_exam.unique_stg_orders_order_id.e3b841c71a)
+[0m15:38:22.219840 [debug] [Thread-1 (]: Began compiling node test.practical_exam.unique_stg_orders_order_id.e3b841c71a
+[0m15:38:22.272737 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.unique_stg_orders_order_id.e3b841c71a"
+[0m15:38:22.276483 [debug] [Thread-1 (]: Began executing node test.practical_exam.unique_stg_orders_order_id.e3b841c71a
+[0m15:38:22.279208 [debug] [Thread-1 (]: Finished running node test.practical_exam.unique_stg_orders_order_id.e3b841c71a
+[0m15:38:22.280923 [debug] [Thread-1 (]: Began running node model.practical_exam.fct_orders
+[0m15:38:22.284233 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.unique_stg_orders_order_id.e3b841c71a, now model.practical_exam.fct_orders)
+[0m15:38:22.286424 [debug] [Thread-1 (]: Began compiling node model.practical_exam.fct_orders
+[0m15:38:22.316568 [debug] [Thread-1 (]: Writing injected SQL for node "model.practical_exam.fct_orders"
+[0m15:38:22.319416 [debug] [Thread-1 (]: Began executing node model.practical_exam.fct_orders
+[0m15:38:22.322316 [debug] [Thread-1 (]: Finished running node model.practical_exam.fct_orders
+[0m15:38:22.324168 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_int_orders_customer_id.e78a71eed3
+[0m15:38:22.332141 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.practical_exam.fct_orders, now test.practical_exam.not_null_int_orders_customer_id.e78a71eed3)
+[0m15:38:22.333727 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_int_orders_customer_id.e78a71eed3
+[0m15:38:22.368947 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_int_orders_customer_id.e78a71eed3"
+[0m15:38:22.371837 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_int_orders_customer_id.e78a71eed3
+[0m15:38:22.374032 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_int_orders_customer_id.e78a71eed3
+[0m15:38:22.376299 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_int_orders_order_date.c8d13500bb
+[0m15:38:22.378572 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_int_orders_customer_id.e78a71eed3, now test.practical_exam.not_null_int_orders_order_date.c8d13500bb)
+[0m15:38:22.380348 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_int_orders_order_date.c8d13500bb
+[0m15:38:22.421601 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_int_orders_order_date.c8d13500bb"
+[0m15:38:22.424342 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_int_orders_order_date.c8d13500bb
+[0m15:38:22.428144 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_int_orders_order_date.c8d13500bb
+[0m15:38:22.430031 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_int_orders_order_id.383134cc66
+[0m15:38:22.432099 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_int_orders_order_date.c8d13500bb, now test.practical_exam.not_null_int_orders_order_id.383134cc66)
+[0m15:38:22.434028 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_int_orders_order_id.383134cc66
+[0m15:38:22.479947 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_int_orders_order_id.383134cc66"
+[0m15:38:22.482638 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_int_orders_order_id.383134cc66
+[0m15:38:22.485558 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_int_orders_order_id.383134cc66
+[0m15:38:22.487457 [debug] [Thread-1 (]: Began running node test.practical_exam.unique_int_orders_order_id.63cc4f3a7a
+[0m15:38:22.489578 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_int_orders_order_id.383134cc66, now test.practical_exam.unique_int_orders_order_id.63cc4f3a7a)
+[0m15:38:22.492616 [debug] [Thread-1 (]: Began compiling node test.practical_exam.unique_int_orders_order_id.63cc4f3a7a
+[0m15:38:22.528785 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.unique_int_orders_order_id.63cc4f3a7a"
+[0m15:38:22.531301 [debug] [Thread-1 (]: Began executing node test.practical_exam.unique_int_orders_order_id.63cc4f3a7a
+[0m15:38:22.533031 [debug] [Thread-1 (]: Finished running node test.practical_exam.unique_int_orders_order_id.63cc4f3a7a
+[0m15:38:22.534281 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_fct_orders_order_date.84f0a76362
+[0m15:38:22.536173 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.unique_int_orders_order_id.63cc4f3a7a, now test.practical_exam.not_null_fct_orders_order_date.84f0a76362)
+[0m15:38:22.538744 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_fct_orders_order_date.84f0a76362
+[0m15:38:22.579764 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_fct_orders_order_date.84f0a76362"
+[0m15:38:22.583176 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_fct_orders_order_date.84f0a76362
+[0m15:38:22.588856 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_fct_orders_order_date.84f0a76362
+[0m15:38:22.590498 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_fct_orders_order_id.4e687af8d0
+[0m15:38:22.593048 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_fct_orders_order_date.84f0a76362, now test.practical_exam.not_null_fct_orders_order_id.4e687af8d0)
+[0m15:38:22.613525 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_fct_orders_order_id.4e687af8d0
+[0m15:38:22.648274 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_fct_orders_order_id.4e687af8d0"
+[0m15:38:22.664369 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_fct_orders_order_id.4e687af8d0
+[0m15:38:22.667204 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_fct_orders_order_id.4e687af8d0
+[0m15:38:22.668966 [debug] [Thread-1 (]: Began running node test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:38:22.671882 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_fct_orders_order_id.4e687af8d0, now test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd)
+[0m15:38:22.677413 [debug] [Thread-1 (]: Began compiling node test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:38:22.729904 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd"
+[0m15:38:22.733350 [debug] [Thread-1 (]: Began executing node test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:38:22.736534 [debug] [Thread-1 (]: Finished running node test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:38:22.739030 [debug] [Thread-1 (]: Began running node test.practical_exam.unique_fct_orders_order_id.523ddb6ce5
+[0m15:38:22.741210 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd, now test.practical_exam.unique_fct_orders_order_id.523ddb6ce5)
+[0m15:38:22.744896 [debug] [Thread-1 (]: Began compiling node test.practical_exam.unique_fct_orders_order_id.523ddb6ce5
+[0m15:38:22.769507 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.unique_fct_orders_order_id.523ddb6ce5"
+[0m15:38:22.773133 [debug] [Thread-1 (]: Began executing node test.practical_exam.unique_fct_orders_order_id.523ddb6ce5
+[0m15:38:22.777632 [debug] [Thread-1 (]: Finished running node test.practical_exam.unique_fct_orders_order_id.523ddb6ce5
+[0m15:38:22.781857 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:38:22.783486 [debug] [MainThread]: Connection 'test.practical_exam.unique_fct_orders_order_id.523ddb6ce5' was properly closed.
+[0m15:38:22.797017 [debug] [MainThread]: Command end result
+[0m15:38:23.441002 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/manifest.json
+[0m15:38:23.453960 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/semantic_manifest.json
+[0m15:38:23.514813 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/osi_document.json
+[0m15:38:23.544620 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/run_results.json
+[0m15:38:23.555712 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m15:38:23.556840 [info ] [MainThread]: Building catalog
+[0m15:38:23.622642 [debug] [ThreadPool]: Acquiring new postgres connection 'exam.information_schema'
+[0m15:38:23.636207 [debug] [ThreadPool]: Using postgres connection "exam.information_schema"
+[0m15:38:23.637416 [debug] [ThreadPool]: On exam.information_schema: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "exam.information_schema"} */
+
+    
+    
+
+    select
+        'exam' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('int_orders')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_orders')) or (upper(sch.nspname) = upper('ecommerce') and
+           upper(tbl.relname) = upper('products')) or (upper(sch.nspname) = upper('ecommerce') and
+           upper(tbl.relname) = upper('order_items')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_customers')) or (upper(sch.nspname) = upper('ecommerce') and
+           upper(tbl.relname) = upper('orders')) or (upper(sch.nspname) = upper('ecommerce') and
+           upper(tbl.relname) = upper('customers')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('fct_orders')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m15:38:23.639317 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:38:23.757534 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.118 seconds
+[0m15:38:23.763295 [debug] [ThreadPool]: On exam.information_schema: ROLLBACK
+[0m15:38:23.787261 [debug] [ThreadPool]: On exam.information_schema: Close
+[0m15:38:23.798708 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/catalog.json
+[0m15:38:23.928230 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/manifest.json
+[0m15:38:23.950586 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/semantic_manifest.json
+[0m15:38:23.965162 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/osi_document.json
+[0m15:38:23.966340 [info ] [MainThread]: Catalog written to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/catalog.json
+[0m15:38:23.968808 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 3 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m15:38:24.075508 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 14.357894, "process_in_blocks": "0", "process_kernel_time": 1.601946, "process_mem_max_rss": "141111296", "process_out_blocks": "0", "process_user_time": 12.675207}
+[0m15:38:24.096395 [debug] [MainThread]: Command `dbt docs generate` succeeded at 15:38:24.080575 after 14.36 seconds
+[0m15:38:24.109245 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m15:38:24.124065 [debug] [MainThread]: Connection 'exam.information_schema' was properly closed.
+[0m15:38:24.126527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b872a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb15360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e15c0a0>]}
+[0m15:38:24.136152 [debug] [MainThread]: Flushing usage events
+[0m15:38:25.310284 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:38:54.785243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8fea70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110fa7730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110fa7b80>]}
+
+
+============================== 15:38:54.803278 | 912f1deb-aea4-425d-b4f2-e11649dfa2cb ==============================
+[0m15:38:54.803278 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:38:54.805975 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'static_parser': 'True', 'target_path': 'None', 'use_colors': 'True', 'empty': 'None', 'log_path': '/Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'hints_enabled': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'no_print': 'None', 'fail_fast': 'False', 'profiles_dir': '/Users/dhbinu/.dbt', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'partial_parse': 'True', 'quiet': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'maximum_seed_size_mib': '1'}
+[0m15:38:56.492696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '912f1deb-aea4-425d-b4f2-e11649dfa2cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2483a0>]}
+[0m15:38:56.890045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '912f1deb-aea4-425d-b4f2-e11649dfa2cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110fa62f0>]}
+[0m15:38:58.503053 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+[Errno 48] Address already in use
+[0m15:38:58.516192 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/requires.py", line 295, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/requires.py", line 340, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/requires.py", line 387, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/main.py", line 323, in docs_serve
+    results = task.run()
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/task/docs/serve.py", line 24, in run
+    with socketserver.TCPServer((host, port), SimpleHTTPRequestHandler) as httpd:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+
+[0m15:38:58.528812 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 4.4919734, "process_in_blocks": "0", "process_kernel_time": 1.009635, "process_mem_max_rss": "107978752", "process_out_blocks": "0", "process_user_time": 6.99999}
+[0m15:38:58.531643 [debug] [MainThread]: Command `dbt docs serve` failed at 15:38:58.531162 after 4.50 seconds
+[0m15:38:58.537758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8fea70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e09360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111e093f0>]}
+[0m15:38:58.540353 [debug] [MainThread]: Flushing usage events
+[0m15:39:01.260287 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:40:35.351032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c2e2ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d9e31c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d9e2d70>]}
+
+
+============================== 15:40:35.370983 | 9e5ee10c-10d5-4a6a-85c0-66b30b3797c8 ==============================
+[0m15:40:35.370983 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:40:35.373995 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'cache_selected_only': 'False', 'profiles_dir': '/Users/dhbinu/.dbt', 'log_format': 'default', 'hints_enabled': 'True', 'quiet': 'False', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'partial_parse': 'True', 'log_path': '/Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/logs', 'indirect_selection': 'eager', 'write_json': 'True', 'invocation_command': 'dbt docs generate', 'empty': 'None', 'introspect': 'True', 'version_check': 'True', 'use_colors': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'debug': 'False', 'static_parser': 'True'}
+[0m15:40:37.567065 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9e5ee10c-10d5-4a6a-85c0-66b30b3797c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aac8880>]}
+[0m15:40:38.522604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9e5ee10c-10d5-4a6a-85c0-66b30b3797c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce56a10>]}
+[0m15:40:38.527726 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m15:40:38.988532 [debug] [MainThread]: checksum: fa0e3313d7e80a7c390dff9a981c0bd05689b386e79da64cdec770a99105aedf, vars: {}, profile: my_dbt_project, target: dev, version: 1.12.5
+[0m15:40:39.568924 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:40:39.570517 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:40:39.571458 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:40:39.617293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9e5ee10c-10d5-4a6a-85c0-66b30b3797c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec98a60>]}
+[0m15:40:39.838496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9e5ee10c-10d5-4a6a-85c0-66b30b3797c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10daab340>]}
+[0m15:40:39.840035 [info ] [MainThread]: Found 4 models, 16 data tests, 4 sources, 477 macros
+[0m15:40:39.841347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9e5ee10c-10d5-4a6a-85c0-66b30b3797c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c62e7d0>]}
+[0m15:40:39.877740 [info ] [MainThread]: 
+[0m15:40:39.882033 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:40:39.886459 [info ] [MainThread]: 
+[0m15:40:39.900550 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:40:39.933955 [debug] [ThreadPool]: Acquiring new postgres connection 'list_exam_public'
+[0m15:40:40.159874 [debug] [ThreadPool]: Using postgres connection "list_exam_public"
+[0m15:40:40.161962 [debug] [ThreadPool]: On list_exam_public: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "list_exam_public"} */
+select
+      'exam' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'exam' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'exam' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+    union all
+    select distinct
+     'exam' as database,
+     proname as name,
+     ns.nspname as schema,
+     'function' as type
+    from pg_proc
+     join pg_namespace as ns on pronamespace = ns.oid
+    where ns.nspname ilike 'public'
+  
+[0m15:40:40.164239 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:40:40.440262 [debug] [ThreadPool]: SQL status: SELECT 14 in 0.276 seconds
+[0m15:40:40.444578 [debug] [ThreadPool]: On list_exam_public: ROLLBACK
+[0m15:40:40.446369 [debug] [ThreadPool]: On list_exam_public: Close
+[0m15:40:40.463041 [debug] [MainThread]: Using postgres connection "master"
+[0m15:40:40.464561 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m15:40:40.465599 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:40:40.592823 [debug] [MainThread]: SQL status: SELECT 6 in 0.127 seconds
+[0m15:40:40.600533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9e5ee10c-10d5-4a6a-85c0-66b30b3797c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4e5e40>]}
+[0m15:40:40.601855 [debug] [MainThread]: On master: ROLLBACK
+[0m15:40:40.603498 [debug] [MainThread]: On master: Close
+[0m15:40:40.612159 [debug] [Thread-1 (]: Began running node model.practical_exam.stg_customers
+[0m15:40:40.613749 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_exam_public, now model.practical_exam.stg_customers)
+[0m15:40:40.615453 [debug] [Thread-1 (]: Began compiling node model.practical_exam.stg_customers
+[0m15:40:40.635260 [debug] [Thread-1 (]: Writing injected SQL for node "model.practical_exam.stg_customers"
+[0m15:40:40.636851 [debug] [Thread-1 (]: Began executing node model.practical_exam.stg_customers
+[0m15:40:40.638442 [debug] [Thread-1 (]: Finished running node model.practical_exam.stg_customers
+[0m15:40:40.639511 [debug] [Thread-1 (]: Began running node model.practical_exam.stg_orders
+[0m15:40:40.642442 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.practical_exam.stg_customers, now model.practical_exam.stg_orders)
+[0m15:40:40.643422 [debug] [Thread-1 (]: Began compiling node model.practical_exam.stg_orders
+[0m15:40:40.647786 [debug] [Thread-1 (]: Writing injected SQL for node "model.practical_exam.stg_orders"
+[0m15:40:40.651128 [debug] [Thread-1 (]: Began executing node model.practical_exam.stg_orders
+[0m15:40:40.654329 [debug] [Thread-1 (]: Finished running node model.practical_exam.stg_orders
+[0m15:40:40.655932 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:40:40.659372 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.practical_exam.stg_orders, now test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa)
+[0m15:40:40.660778 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:40:40.709425 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa"
+[0m15:40:40.712244 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:40:40.715265 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa
+[0m15:40:40.716296 [debug] [Thread-1 (]: Began running node test.practical_exam.unique_stg_customers_customer_id.c7614daada
+[0m15:40:40.717597 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_stg_customers_customer_id.e2cfb1f9aa, now test.practical_exam.unique_stg_customers_customer_id.c7614daada)
+[0m15:40:40.718528 [debug] [Thread-1 (]: Began compiling node test.practical_exam.unique_stg_customers_customer_id.c7614daada
+[0m15:40:40.745964 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.unique_stg_customers_customer_id.c7614daada"
+[0m15:40:40.748246 [debug] [Thread-1 (]: Began executing node test.practical_exam.unique_stg_customers_customer_id.c7614daada
+[0m15:40:40.750692 [debug] [Thread-1 (]: Finished running node test.practical_exam.unique_stg_customers_customer_id.c7614daada
+[0m15:40:40.752274 [debug] [Thread-1 (]: Began running node model.practical_exam.int_orders
+[0m15:40:40.754292 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.unique_stg_customers_customer_id.c7614daada, now model.practical_exam.int_orders)
+[0m15:40:40.755689 [debug] [Thread-1 (]: Began compiling node model.practical_exam.int_orders
+[0m15:40:40.762570 [debug] [Thread-1 (]: Writing injected SQL for node "model.practical_exam.int_orders"
+[0m15:40:40.764901 [debug] [Thread-1 (]: Began executing node model.practical_exam.int_orders
+[0m15:40:40.767377 [debug] [Thread-1 (]: Finished running node model.practical_exam.int_orders
+[0m15:40:40.768493 [debug] [Thread-1 (]: Began running node test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0
+[0m15:40:40.769930 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.practical_exam.int_orders, now test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0)
+[0m15:40:40.770834 [debug] [Thread-1 (]: Began compiling node test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0
+[0m15:40:40.864631 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0"
+[0m15:40:40.867036 [debug] [Thread-1 (]: Began executing node test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0
+[0m15:40:40.870374 [debug] [Thread-1 (]: Finished running node test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0
+[0m15:40:40.874664 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:40:40.876134 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.accepted_values_stg_orders_order_status__pending__shipped__delivered__cancelled.5aed12d9d0, now test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5)
+[0m15:40:40.877274 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:40:40.891341 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5"
+[0m15:40:40.893462 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:40:40.896153 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5
+[0m15:40:40.897592 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:40:40.899104 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_stg_orders_customer_id.af79d5e4b5, now test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb)
+[0m15:40:40.900551 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:40:40.922035 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb"
+[0m15:40:40.924317 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:40:40.926888 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb
+[0m15:40:40.928045 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:40:40.929123 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_stg_orders_order_date.2177a3e8bb, now test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64)
+[0m15:40:40.929934 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:40:40.945401 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64"
+[0m15:40:40.947200 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:40:40.948834 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64
+[0m15:40:40.949885 [debug] [Thread-1 (]: Began running node test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m15:40:40.951314 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_stg_orders_order_id.81cfe2fe64, now test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500)
+[0m15:40:40.952707 [debug] [Thread-1 (]: Began compiling node test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m15:40:40.996878 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500"
+[0m15:40:40.999340 [debug] [Thread-1 (]: Began executing node test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m15:40:41.001685 [debug] [Thread-1 (]: Finished running node test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500
+[0m15:40:41.003628 [debug] [Thread-1 (]: Began running node test.practical_exam.unique_stg_orders_order_id.e3b841c71a
+[0m15:40:41.005690 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.relationships_stg_orders_customer_id__customer_id__ref_stg_customers_.430bf21500, now test.practical_exam.unique_stg_orders_order_id.e3b841c71a)
+[0m15:40:41.007070 [debug] [Thread-1 (]: Began compiling node test.practical_exam.unique_stg_orders_order_id.e3b841c71a
+[0m15:40:41.022754 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.unique_stg_orders_order_id.e3b841c71a"
+[0m15:40:41.025284 [debug] [Thread-1 (]: Began executing node test.practical_exam.unique_stg_orders_order_id.e3b841c71a
+[0m15:40:41.027004 [debug] [Thread-1 (]: Finished running node test.practical_exam.unique_stg_orders_order_id.e3b841c71a
+[0m15:40:41.028138 [debug] [Thread-1 (]: Began running node model.practical_exam.fct_orders
+[0m15:40:41.029452 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.unique_stg_orders_order_id.e3b841c71a, now model.practical_exam.fct_orders)
+[0m15:40:41.030311 [debug] [Thread-1 (]: Began compiling node model.practical_exam.fct_orders
+[0m15:40:41.043057 [debug] [Thread-1 (]: Writing injected SQL for node "model.practical_exam.fct_orders"
+[0m15:40:41.044912 [debug] [Thread-1 (]: Began executing node model.practical_exam.fct_orders
+[0m15:40:41.046723 [debug] [Thread-1 (]: Finished running node model.practical_exam.fct_orders
+[0m15:40:41.047701 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_int_orders_customer_id.e78a71eed3
+[0m15:40:41.049861 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.practical_exam.fct_orders, now test.practical_exam.not_null_int_orders_customer_id.e78a71eed3)
+[0m15:40:41.051226 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_int_orders_customer_id.e78a71eed3
+[0m15:40:41.070313 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_int_orders_customer_id.e78a71eed3"
+[0m15:40:41.071833 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_int_orders_customer_id.e78a71eed3
+[0m15:40:41.073554 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_int_orders_customer_id.e78a71eed3
+[0m15:40:41.074512 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_int_orders_order_date.c8d13500bb
+[0m15:40:41.076136 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_int_orders_customer_id.e78a71eed3, now test.practical_exam.not_null_int_orders_order_date.c8d13500bb)
+[0m15:40:41.077165 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_int_orders_order_date.c8d13500bb
+[0m15:40:41.097892 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_int_orders_order_date.c8d13500bb"
+[0m15:40:41.100348 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_int_orders_order_date.c8d13500bb
+[0m15:40:41.102809 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_int_orders_order_date.c8d13500bb
+[0m15:40:41.103936 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_int_orders_order_id.383134cc66
+[0m15:40:41.106193 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_int_orders_order_date.c8d13500bb, now test.practical_exam.not_null_int_orders_order_id.383134cc66)
+[0m15:40:41.108072 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_int_orders_order_id.383134cc66
+[0m15:40:41.124282 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_int_orders_order_id.383134cc66"
+[0m15:40:41.126453 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_int_orders_order_id.383134cc66
+[0m15:40:41.128360 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_int_orders_order_id.383134cc66
+[0m15:40:41.129993 [debug] [Thread-1 (]: Began running node test.practical_exam.unique_int_orders_order_id.63cc4f3a7a
+[0m15:40:41.131728 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_int_orders_order_id.383134cc66, now test.practical_exam.unique_int_orders_order_id.63cc4f3a7a)
+[0m15:40:41.133263 [debug] [Thread-1 (]: Began compiling node test.practical_exam.unique_int_orders_order_id.63cc4f3a7a
+[0m15:40:41.152109 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.unique_int_orders_order_id.63cc4f3a7a"
+[0m15:40:41.154990 [debug] [Thread-1 (]: Began executing node test.practical_exam.unique_int_orders_order_id.63cc4f3a7a
+[0m15:40:41.158231 [debug] [Thread-1 (]: Finished running node test.practical_exam.unique_int_orders_order_id.63cc4f3a7a
+[0m15:40:41.160371 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_fct_orders_order_date.84f0a76362
+[0m15:40:41.162067 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.unique_int_orders_order_id.63cc4f3a7a, now test.practical_exam.not_null_fct_orders_order_date.84f0a76362)
+[0m15:40:41.163397 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_fct_orders_order_date.84f0a76362
+[0m15:40:41.183474 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_fct_orders_order_date.84f0a76362"
+[0m15:40:41.186457 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_fct_orders_order_date.84f0a76362
+[0m15:40:41.190198 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_fct_orders_order_date.84f0a76362
+[0m15:40:41.192836 [debug] [Thread-1 (]: Began running node test.practical_exam.not_null_fct_orders_order_id.4e687af8d0
+[0m15:40:41.199953 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_fct_orders_order_date.84f0a76362, now test.practical_exam.not_null_fct_orders_order_id.4e687af8d0)
+[0m15:40:41.202696 [debug] [Thread-1 (]: Began compiling node test.practical_exam.not_null_fct_orders_order_id.4e687af8d0
+[0m15:40:41.235288 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.not_null_fct_orders_order_id.4e687af8d0"
+[0m15:40:41.238151 [debug] [Thread-1 (]: Began executing node test.practical_exam.not_null_fct_orders_order_id.4e687af8d0
+[0m15:40:41.240629 [debug] [Thread-1 (]: Finished running node test.practical_exam.not_null_fct_orders_order_id.4e687af8d0
+[0m15:40:41.242377 [debug] [Thread-1 (]: Began running node test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:40:41.244837 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.not_null_fct_orders_order_id.4e687af8d0, now test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd)
+[0m15:40:41.246636 [debug] [Thread-1 (]: Began compiling node test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:40:41.286648 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd"
+[0m15:40:41.295188 [debug] [Thread-1 (]: Began executing node test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:40:41.298324 [debug] [Thread-1 (]: Finished running node test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd
+[0m15:40:41.300232 [debug] [Thread-1 (]: Began running node test.practical_exam.unique_fct_orders_order_id.523ddb6ce5
+[0m15:40:41.303208 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.practical_exam.relationships_fct_orders_customer_id__customer_id__ref_stg_customers_.aaa6d401fd, now test.practical_exam.unique_fct_orders_order_id.523ddb6ce5)
+[0m15:40:41.312724 [debug] [Thread-1 (]: Began compiling node test.practical_exam.unique_fct_orders_order_id.523ddb6ce5
+[0m15:40:41.346202 [debug] [Thread-1 (]: Writing injected SQL for node "test.practical_exam.unique_fct_orders_order_id.523ddb6ce5"
+[0m15:40:41.348885 [debug] [Thread-1 (]: Began executing node test.practical_exam.unique_fct_orders_order_id.523ddb6ce5
+[0m15:40:41.352790 [debug] [Thread-1 (]: Finished running node test.practical_exam.unique_fct_orders_order_id.523ddb6ce5
+[0m15:40:41.357138 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:40:41.359588 [debug] [MainThread]: Connection 'test.practical_exam.unique_fct_orders_order_id.523ddb6ce5' was properly closed.
+[0m15:40:41.376562 [debug] [MainThread]: Command end result
+[0m15:40:41.923811 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/manifest.json
+[0m15:40:41.931886 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/semantic_manifest.json
+[0m15:40:41.985237 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/osi_document.json
+[0m15:40:42.020296 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/run_results.json
+[0m15:40:42.037744 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m15:40:42.038605 [info ] [MainThread]: Building catalog
+[0m15:40:42.139976 [debug] [ThreadPool]: Acquiring new postgres connection 'exam.information_schema'
+[0m15:40:42.163239 [debug] [ThreadPool]: Using postgres connection "exam.information_schema"
+[0m15:40:42.164828 [debug] [ThreadPool]: On exam.information_schema: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "my_dbt_project", "target_name": "dev", "connection_name": "exam.information_schema"} */
+
+    
+    
+
+    select
+        'exam' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('ecommerce') and
+           upper(tbl.relname) = upper('orders')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_orders')) or (upper(sch.nspname) = upper('ecommerce') and
+           upper(tbl.relname) = upper('products')) or (upper(sch.nspname) = upper('ecommerce') and
+           upper(tbl.relname) = upper('customers')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('int_orders')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('fct_orders')) or (upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('stg_customers')) or (upper(sch.nspname) = upper('ecommerce') and
+           upper(tbl.relname) = upper('order_items')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m15:40:42.165866 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:40:42.258358 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.092 seconds
+[0m15:40:42.264864 [debug] [ThreadPool]: On exam.information_schema: ROLLBACK
+[0m15:40:42.295514 [debug] [ThreadPool]: On exam.information_schema: Close
+[0m15:40:42.310425 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/catalog.json
+[0m15:40:42.426806 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/manifest.json
+[0m15:40:42.439342 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/semantic_manifest.json
+[0m15:40:42.460490 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/osi_document.json
+[0m15:40:42.461882 [info ] [MainThread]: Catalog written to /Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/target/catalog.json
+[0m15:40:42.474871 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 8.07784, "process_in_blocks": "0", "process_kernel_time": 1.403142, "process_mem_max_rss": "124919808", "process_out_blocks": "0", "process_user_time": 9.445662}
+[0m15:40:42.479747 [debug] [MainThread]: Command `dbt docs generate` succeeded at 15:40:42.479339 after 8.08 seconds
+[0m15:40:42.482726 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m15:40:42.500806 [debug] [MainThread]: Connection 'exam.information_schema' was properly closed.
+[0m15:40:42.503443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c2e2ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ebf3880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0a6aa0>]}
+[0m15:40:42.509296 [debug] [MainThread]: Flushing usage events
+[0m15:40:44.037702 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:41:10.467318 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108afea40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fdf730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109fdfb80>]}
+
+
+============================== 15:41:10.477160 | dad40670-1258-4138-a89c-183ee49866b9 ==============================
+[0m15:41:10.477160 [info ] [MainThread]: Running with dbt=1.12.5
+[0m15:41:10.479034 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/dhbinu/Desktop/practical-exam/Q5-DBT-Transformation/logs', 'hints_enabled': 'True', 'quiet': 'False', 'empty': 'None', 'printer_width': '80', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'maximum_seed_size_mib': '1', 'log_format': 'default', 'debug': 'False', 'write_json': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'invocation_command': 'dbt docs serve', 'log_cache_events': 'False', 'introspect': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'partial_parse': 'True', 'profiles_dir': '/Users/dhbinu/.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'cache_selected_only': 'False'}
+[0m15:41:11.323859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dad40670-1258-4138-a89c-183ee49866b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109ea31c0>]}
+[0m15:41:11.574800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dad40670-1258-4138-a89c-183ee49866b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f3b430>]}
+[0m15:41:12.579987 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+[Errno 48] Address already in use
+[0m15:41:12.658536 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/requires.py", line 295, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/requires.py", line 340, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/requires.py", line 387, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/cli/main.py", line 323, in docs_serve
+    results = task.run()
+  File "/Users/dhbinu/Library/Python/3.10/lib/python/site-packages/dbt/task/docs/serve.py", line 24, in run
+    with socketserver.TCPServer((host, port), SimpleHTTPRequestHandler) as httpd:
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 48] Address already in use
+
+[0m15:41:12.667473 [debug] [MainThread]: Resource report: {"command_name": "serve", "command_success": false, "command_wall_clock_time": 4.168581, "process_in_blocks": "0", "process_kernel_time": 0.799765, "process_mem_max_rss": "107626496", "process_out_blocks": "0", "process_user_time": 6.303659}
+[0m15:41:12.674596 [debug] [MainThread]: Command `dbt docs serve` failed at 15:41:12.674106 after 4.18 seconds
+[0m15:41:12.700968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108afea40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae41360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ae413f0>]}
+[0m15:41:12.706888 [debug] [MainThread]: Flushing usage events
+[0m15:41:14.308269 [debug] [MainThread]: An error was encountered while trying to flush usage events
